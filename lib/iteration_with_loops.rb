@@ -1,13 +1,13 @@
 def find_even_values(src)
   x = 0
-  while src[x] do
+  while x < src.length do
     y = 0
-    while src[y] do
+    while y < src[x].length do
       if src[x][y] % 2 == 0
         puts src[x][y]
       end
-    y += 1
+      y += 1
     end
-  x += 1
+    x += 1
   end
 end
